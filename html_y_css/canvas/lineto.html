@@ -11,12 +11,15 @@
     <script type="application/javascript">
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "rgba(227,255,71,0.9)";
         ctx.beginPath(); //Empezar dibujo, coordenada origen
         ctx.moveTo(25,25);
         ctx.lineTo(105,25);
         ctx.lineTo(25,105);
         ctx.closePath();
         ctx.fill();
+        
+        ctx.strokeStyle = "blue";
         ctx.beginPath();
         ctx.moveTo(125,125);
         ctx.lineTo(125,45);
