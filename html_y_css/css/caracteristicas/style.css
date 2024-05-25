@@ -30,11 +30,23 @@ body{
     background-color: white;
 }*/
 
-p{
+/*p{
     background-color: yellow;
     color: white;
 }
 
 a{
     color: inherit; 
+}*/
+
+#identificador{
+    color: lightsalmon;
+}
+
+.clase{
+    color: lawngreen;
+}
+
+p{
+    color: lightcoral !important;
 }
