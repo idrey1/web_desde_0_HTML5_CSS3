@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizar</title>
+</head>
+<body>
+   <button onclick="getLocation()">Ubicación</button> 
+   <p id="localizacion"></p>
+
+   <script>
+        let geo = document.getElementById("localizacion");
+        function getLocation(){
+                        //Si el navegador soporte la geolocalización
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                geo.innerHTML = "No es compatible la geolocalización";
+            }
+        }
+
+        function showPosition(position){
+            geo.innerHTML = "Latitud: " + position.coords.latitude + "<br>longitud: " 
+            + position.coords.longitude;
+        }
+   </script>
+</body>
+</html>
