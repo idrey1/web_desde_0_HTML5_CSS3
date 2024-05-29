@@ -22,7 +22,7 @@ p{
 h1{
     font-size: 72px;
 }*/
-p.parrafo{
+/*p.parrafo{
     color: white;
     font-size: 48px;
     background-color: black;
@@ -44,4 +44,7 @@ a.parrafo{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: chartreuse
+}*/
+p a{
+    background-color: green;
 }
